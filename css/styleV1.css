@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* main header */
+
+body > header {
+    background-color: #ffcc00;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.5);
+    flex-basis: 100%;
+}
+
+body > header h1 {
+    text-align: center;
+    margin-top: 0.3em;
+}
+
+body > header p {
+    padding: 1em;
+    text-align: center;
+}
+
+body > header img {
+    display: none;
+    width: 20em;
+    margin: 0.6rem auto;
+}
+
+body > header nav {
+    margin-bottom: 1em;
+
+}
+
+body > header nav ul li {
+    text-align: center;
+    margin-top: 0.4em;
+    display: block;
+    line-height: 2em;
+    background-color: rgba(0,0,0,.7);
+}
+
+body > header nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+body > header form {
+    display: block;
+    margin-right:1rem;
+    line-height: 3rem;
+    float: left;
+}
+
+body > header p[class=to-profile] {
+    display: block;
+    margin-right:1rem;
+    line-height: 3rem;
+    float: right;
+}
+
+body > main {
+    margin: 1rem;
+    flex-basis: 40em;
+    order: 2;
+}
+
+body > main header h1 {
+    padding-bottom: 0.7em;
+}
+
+body > main article ol {
+    list-style: none;
+}
+
+body > aside {
+    flex-basis: 15em;
+    order: 1;
+    width: 20rem;
+    margin-left: 1em;
+}
+
+body > .related {
+    flex-basis: 25em;
+    order: 3;
+}
+

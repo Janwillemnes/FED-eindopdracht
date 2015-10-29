@@ -1,0 +1,270 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* main header */
+
+body > header {
+    background-color: #ffcc00;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.5);
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body > header h1 {
+    text-align: center;
+    text-shadow: 0.07em 0.07em #333;
+    margin-top: 0.3em;
+}
+
+body > header p {
+    padding: 1em;
+    text-align: center;
+}
+
+body > header img {
+    order: -1;
+    width: 20em;
+    margin: 0.6em auto;
+    align-content: center;
+    transition: all 0.3s;
+}
+
+body > header img:hover {
+    -ms-transform: rotate(7deg); /* IE 9 */
+    transform: rotate(7deg);
+}
+
+
+body > header nav {
+    margin-bottom: 1em;
+}
+
+body > header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+body > header nav ul li {
+    flex: 1;
+}
+
+body > header nav ul li a {
+    color: #FFF;
+    font-weight: 100;
+    text-decoration: none;
+    letter-spacing: 2px;
+    background: rgba(0,0,0,0.7);
+    display: inline-block;
+    padding: 15px 0px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+body > header nav ul li a:hover {
+    background: rgba(0,0,0,0.4);
+}
+
+body > header form {
+    margin: auto;
+    margin-right:1rem;
+    line-height: 3rem;
+}
+
+body > header p[class=to-profile] {
+    display: block;
+    margin-right:1rem;
+    line-height: 3rem;
+    float: right;
+}
+
+body > main {
+    flex-basis: 48em;
+    flex-grow: 1;
+    margin: 1em;
+    border-radius: 35px;
+    padding: 1.5em;
+    background-color: #DBDBDB;
+}
+
+body > main > form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+body > main > form > fieldset > label {
+    display: block;
+    padding: 0.5em;
+}
+
+body > main > form > fieldset > fieldset > label {
+    display: block;
+    padding: 0.5em;
+}
+
+body > main > form > fieldset {
+    margin-top: 1em;
+    display: block;
+}
+
+#stage {
+    display: none;
+}
+
+#project {
+    display:none;
+}
+
+body > aside {
+    display: flex;
+    background-color: #999;
+    padding: 1em;
+}
+
+body > aside > h2 a {
+    color: #ffcc00;
+}
+
+body > aside p {
+    margin: 0.2em 0em 0.9em 0em;
+}
+
+body > aside p a {
+    color: black;
+    font-weight: bold;
+}
+
+body > aside p a:hover {
+    color: #ffcc00;
+}
+
+body > .related {
+    margin: 1em;
+    flex-basis: 20em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body > .related article {
+    margin-bottom: 0.5em;
+    padding: 1em;
+    border-radius: 35px;
+    background: tomato;
+}
+
+body > footer {
+    background-color: #333;
+    color: #efefef;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body > footer > * {
+    flex-basis: 20em;
+
+    margin: 0 1rem;
+}
+
+body > footer #sitemap {
+    flex-basis: 100%;
+}
+
+body > footer #sitemap > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body > footer #sitemap > ul > * {
+    flex-basis: 20em;
+}
+
+body > footer #sitemap > ul li a {
+    color: white;
+}
+
+body > footer > p:last-of-type {
+    background-color: #ffcc00;
+    line-height: 2em;
+    flex-basis: 100%;
+    margin: 1rem 0;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+body > footer > p:last-of-type:hover {
+    background-color: #F97046;
+}
+
+body > footer p a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+}
+
+body > video {
+    justify-content: center;
+}
+
+/* ___________________ */
+
+@media screen and (max-width: 75em) {
+
+body > header nav ul {
+    flex-wrap: wrap;
+}
+
+body > header nav ul li {
+    flex: 1 1 50%;
+}
+
+body > .related {
+    display: flex;
+    flex-basis: 80em;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+}
+
+
+/* ___________________ */
+
+@media screen and (max-width: 43.750em) {
+
+body > header nav ul {
+    flex-wrap: wrap;
+}
+
+body > header nav ul li {
+    flex: 1 1 100%;
+}
+
+body > main {
+    margin: 1em;
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+}
+}
